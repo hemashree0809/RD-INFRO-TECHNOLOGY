@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FAF0E6;
+    font-family: Arial, sans-serif;
+}
+
+/* Top Bar Styling with visible shadow */
+.top-bar {
+    width: 100%;
+    background-color:#FAF0E6; 
+    color: rgb(8, 12, 8);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.top-bar a {
+    color: rgb(8, 12, 8);
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.top-bar span {
+    color: rgb(8, 12, 8);
+    margin: 0 5px;
+}
+
+.top-bar a:hover {
+    text-decoration: underline;
+}
+
+/* Header Box Styling with separation and shadow */
+.box2 {
+    text-align: center;
+    background-image: url("https://i.pinimg.com/736x/72/c7/3a/72c73a8aa94acfea188c558612b5a0e6.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 140px;
+    margin: 30px auto; /* Adds clear space below top-bar */
+    padding: 15px 20px;
+    
+    
+}
+
+/* Title Text */
+.title h1 {
+    font-family: Optima, sans-serif;
+    color: rgba(26, 29, 20, 0.8);
+    font-size: 60px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding: 0;
+}
+
+.title p {
+    font-family: Optima, sans-serif;
+    color: rgb(8, 12, 8);
+    font-size: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+.quote-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    padding: 30px 20px;
+    width: 80%;
+    max-width: 800px;
+   
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    text-align: center;
+    flex-direction: column;
+    
+}
+
+.travel-quote {
+    font-family: 'Georgia', serif;
+    font-size: 20px;
+    color:black;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto;
+    font-style: italic;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.about-section {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px 25px;
+    
+    
+    border-radius: 12px;
+    text-align: center;
+    line-height: 1.8;
+   
+}
+
+.about-section h2 {
+    font-size: 32px;
+    color:  rgba(26, 29, 20, 0.8);
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 15px;
+}
+.destination-section {
+    width: 90%;
+    max-width: 1000px;
+    color: rgba(26, 29, 20, 0.8);
+    margin: 50px auto;
+    text-align: center;
+}
+.destination-section {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.destination-box {
+   
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.destination-box h2 {
+    font-size: 32px;
+    color: rgba(26, 29, 20, 0.8);
+    margin-bottom: 30px;
+}
+
+.destination-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+   
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+
+
+.destination-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.destination-description {
+    flex: 1;
+    min-width: 250px;
+    padding: 15px;
+    text-align: left;
+}
+
+.destination-description h3 {
+    font-size: 24px;
+    color:rgba(26, 29, 20, 0.8);
+    margin-bottom: 10px;
+}
+
+.destination-description p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+.destination-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.destination-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.destination-description {
+    flex: 1;
+    min-width: 250px;
+    padding: 15px;
+    text-align: left;
+}
+
+/* SPECIFIC for Second Destination: Image on Right */
+.second-destination {
+    flex-direction: row-reverse;
+    background: linear-gradient(135deg, #ffe0b2, #fff3e0);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.second-destination .destination-description h3 {
+    color: #e65100;
+}
+
+.second-destination .destination-description p {
+    color: #4e342e;
+}
+
+.second-destination .destination-image img {
+    border: 3px solid #ff9800;
+}
+.why-choose-section {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 30px 20px;
+    
+   
+}
+
+.why-choose-section h2 {
+    font-size: 32px;
+    color: rgba(26, 29, 20, 0.8);
+    margin-bottom: 25px;
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    text-align: center;
+}
+
+.feature-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.4;
+}
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FAF0E6;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px 30px;
+    flex-wrap: wrap;
+    border-top: 2px solid #ddd;
+}
+
+.footer-left h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: rgba(26, 29, 20, 0.9);
+}
+
+.footer-left p {
+    font-size: 16px;
+    color: #333;
+    margin: 3px 0;
+}
+
+.footer-right {
+    margin-top: 10px;
+}
+
+.book-btn {
+    background-color: #0d47a1;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+    background-color: #08326d;
+}
+
