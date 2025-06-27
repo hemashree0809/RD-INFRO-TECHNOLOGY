@@ -3,14 +3,14 @@ let buttons = document.querySelectorAll(".btn");
 let currentInput = "";
 
 buttons.forEach(button => {
-    button.addEventListener("click", () => {
-        const value = button.getAttribute("data-value");
+    const value = button.getAttribute("data-value");
 
-        if (value) {
+    if (value) {
+        button.addEventListener("click", () => {
             currentInput += value;
             display.value = currentInput;
-        }
-    });
+        });
+    }
 });
 
 document.getElementById("equals").addEventListener("click", () => {
@@ -26,4 +26,9 @@ document.getElementById("equals").addEventListener("click", () => {
 document.getElementById("clear").addEventListener("click", () => {
     currentInput = "";
     display.value = "";
+});
+
+document.getElementById("delete").addEventListener("click", () => {
+    currentInput = currentInput.slice(0, -1);
+    display.value = currentInput;
 });
